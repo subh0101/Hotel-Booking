@@ -1,0 +1,99 @@
+.card {
+  min-width: 20rem;
+  margin: 0 2% 2% 0;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card.active {
+  background-color: #dff0d8;
+}
+
+.card.fade {
+  opacity: 0.5;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.timestamp {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.content {
+  font-size: 0.9rem;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.room-type,
+.room-number,
+.label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.actions {
+  margin-top: 1rem;
+}
+
+.update-button,
+.delete-button {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.update-button {
+  background-color: #5cb85c;
+  color: #fff;
+  margin-right: 0.5rem;
+  border: none;
+}
+
+.delete-button {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+}
+
+@media screen and (min-width: 576px) {
+  .card {
+    width: calc(50% - 1rem);
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: calc(33.33333333% - 1rem);
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    width: calc(25% - 1rem);
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    width: calc(20% - 1rem);
+    margin-right: 1rem;
+  }
+}

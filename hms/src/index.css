@@ -1,0 +1,45 @@
+.spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: #050303;
+  animation: spin 1s ease-in-out infinite;
+  margin-top: 25%;
+  margin-left: 50%;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.filter-container {
+  position: fixed;
+  right: 0;
+  top: 6rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+}
+
+.filter-select {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5rem;
+  margin-top: 1rem;
+}
